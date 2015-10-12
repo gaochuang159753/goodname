@@ -7,6 +7,24 @@
  #t2{background-color:rgba(128, 223, 255,0.6);}
 </style>
 </head>
+  <script type="text/javascript"><!--
+    var background = "http://i.imgur.com/zxn15vJ.jpg";
+    var speed =70;
+    browserName = navigator.appName;
+    browserVer = parseInt(navigator.appVersion);
+    if (browserName != "Netscape" || browserVer >= 4.5) {
+    function moveback(movert,movedn,hPos,vPos) {
+    if (arguments[4]) document.body.style.backgroundImage = "url(\"" + arguments[4] + "\")";
+    if (arguments[5]) document.body.style.backgroundRepeat = arguments[5]
+    if (!isNaN(hPos)) {if ((movert!=0) && (hPos>0)) hPos=-100000; hPos += movert}
+    if (!isNaN(vPos)) {if ((movedn!=0) && (vPos>0)) vPos=-100000; vPos+= movedn}
+    document.body.style.backgroundPosition= hPos + " " + vPos
+    if (isNaN(hPos)) hPos = "\"" + hPos + "\""
+    if (isNaN(vPos)) vPos = "\"" + vPos + "\""
+    setTimeout("moveback("+movert+","+movedn+","+hPos+","+vPos+")",speed)}
+    moveback(1,0,0,0, background);}
+    // --></script>
+    
 <body>
   
   <img src="http://i.imgur.com/9zOsJfl.jpg" style="height: 403px;float:left;">
